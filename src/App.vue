@@ -1,7 +1,7 @@
 <template>
   <div class="container">
 
-    <Header/>
+    <Header restaurantName="Pizza Places in CT" restaurantCity="City"/>
     
 
   </div>
@@ -14,7 +14,26 @@ export default {
   name: 'App',
   components: {
     Header
+  },
+  data(){
+    return {
+        pizzas: []    
+    }
+  },
 
+  methods:{
+    //promices (also how to fetch from API)
+
+    async fetchPizzas(){
+      const res= await fetch('http://localhost:5555/pizza')
+      const data= await res.json()
+      console.log(data)
+
+      return data
+    }
+  },
+  async created(){
+    this.pizzas = await this.fetchPizzas()
   }
 }
 </script>

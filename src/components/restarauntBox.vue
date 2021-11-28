@@ -12,7 +12,7 @@
 <script>
 
 export default {
-    name: 'Header',
+    name: 'restarauntBox',
     props:{
         restaurantName: String,
         restaurantCity: String
