@@ -15,7 +15,7 @@
         {
             "id": 2,
             "name":"Sally's Apizza",
-            "address": "237 Wooster St",
+            "address": "237 Wooster St.",
             "city": "New Haven",
             "state": "CT",
             "zip": "06511",

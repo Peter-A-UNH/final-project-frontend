@@ -1,21 +1,28 @@
 <template>
     <div>
-        <h1>
-            {{restaurantName}}
-        </h1>
-        <h3>
-            {{restaurantCity}}
-        </h3>
+        {{pizzas}}
     </div>
+    <div class="restarauntBox">
+        <div v-for="pizza in pizzas" :key="pizza.id" >
+            <pizza :pizza="pizza"/>
+        </div>
+
+       
+    </div>
+
 </template>
 
 <script>
 
+import pizza from './pizza.vue'
+
 export default {
     name: 'restarauntBox',
+    components:{
+        pizza
+    },
     props:{
-        restaurantName: String,
-        restaurantCity: String
+        pizzas: Array
     }
 
 }
@@ -26,6 +33,13 @@ export default {
 
 div{
     text-align: center;
+}
+.restarauntBox{
+
+    background-color: cadetblue;
+    padding: 1em;
+    color: darkblue;
+
 }
 
 
