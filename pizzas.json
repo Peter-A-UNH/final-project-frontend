@@ -9,7 +9,9 @@
             "state": "CT",
             "zip": "06511",
             "phone":"2038655762",
-            "year": 1925
+            "year": 1925,
+            "isbest": true
+
         },
      
         {
@@ -20,7 +22,8 @@
             "state": "CT",
             "zip": "06511",
             "phone":"2036245271",
-            "year": 1938
+            "year": 1938,
+            "isbest": false
         },
 
         {
@@ -31,7 +34,8 @@
             "state": "CT",
             "zip": "06511",
             "phone":"2037765306",
-            "year": 1934
+            "year": 1934,
+            "isbest": false
         },
 
         {
@@ -42,7 +46,8 @@
             "state": "CT",
             "zip": "06457",
             "phone": "8603589816",
-            "year": 2013
+            "year": 2013,
+            "isbest": false
         },
 
         {
@@ -53,7 +58,8 @@
             "state": "CT",
             "zip": "06902",
             "phone": "2033592184",
-            "year": 1935
+            "year": 1935,
+            "isbest": false
         },
 
         {
@@ -64,7 +70,8 @@
             "state": "CT",
             "zip": "06437",
             "phone": "2034581377",
-            "year": 2016
+            "year": 2016,
+            "isbest": false
         }
      
     ]
