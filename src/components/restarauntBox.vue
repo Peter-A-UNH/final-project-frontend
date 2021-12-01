@@ -1,6 +1,6 @@
 <template>
     <div>
-        {{pizzas}}
+        <!--{{pizzas}} -->
     </div>
     <div class="restarauntBox">
         <div v-for="pizza in pizzas" :key="pizza.id" >
