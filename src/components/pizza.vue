@@ -10,7 +10,7 @@
 export default{
     name: 'Pizza',
     props:{
-        pizza: Array
+        pizza: Object//Array
     }
 }
 </script>

@@ -20,7 +20,7 @@ export default {
         Pizza
     },
     props:{
-        pizzas: Array
+        pizzas: Object  //Array
     }
 
 }
