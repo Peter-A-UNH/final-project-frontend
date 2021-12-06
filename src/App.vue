@@ -3,7 +3,7 @@
 
     <Header restaurantName="Pizza Places in CT" restaurantCity="City"/>
 
-    <restarauntBox :pizzas="pizzas"/>
+    <RestarauntBox :pizzas="pizzas" />
     
 
   </div>
@@ -11,13 +11,13 @@
 
 <script>
 import Header from './components/Header.vue'
-import restarauntBox from './components/restarauntBox.vue'
+import RestarauntBox from './components/RestarauntBox.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
-    restarauntBox
+    RestarauntBox
   },
   data(){
     return {
