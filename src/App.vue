@@ -34,6 +34,7 @@ export default {
       //const res= await fetch('http://localhost:5555/pizza')
       const data= await res.json()
       console.log(data)
+      console.log(typeof(data))
 
       return data
     }

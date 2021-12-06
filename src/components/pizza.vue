@@ -8,7 +8,7 @@
 
 <script>
 export default{
-    name: 'Pizza',
+    name: 'pizza',
     props:{
         pizza: Array
     }
