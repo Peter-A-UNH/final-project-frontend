@@ -1,17 +1,14 @@
 <template>
     <div>
-
-    <h2>{{pizza.name}}</h2>
-    <h4>{{pizza.address}} {{pizza.city}}, {{pizza.state}} {{pizza.zip}}</h4>
-    <h4>Phone: {{pizza.phone}}</h4>
-
-
+        <h2>{{pizza.name}}</h2>
+        <h4>{{pizza.address}} {{pizza.city}}, {{pizza.state}} {{pizza.zip}}</h4>
+        <h4>Phone: {{pizza.phone}}</h4>
     </div>
 </template>
 
 <script>
 export default{
-    name: 'pizza',
+    name: 'Pizza',
     props:{
         pizza: Array
     }

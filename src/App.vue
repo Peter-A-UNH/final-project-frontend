@@ -29,7 +29,9 @@ export default {
     //promices (also how to fetch from API)
 
     async fetchPizzas(){
-      const res= await fetch('http://localhost:5555/pizza')
+      const res= await fetch('https://young-dawn-31355.herokuapp.com/https://pa-final-project.herokuapp.com/api')
+      //const res= await fetch('https://pa-final-project.herokuapp.com/api')
+      //const res= await fetch('http://localhost:5555/pizza')
       const data= await res.json()
       console.log(data)
 

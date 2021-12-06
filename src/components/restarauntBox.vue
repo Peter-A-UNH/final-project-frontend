@@ -1,25 +1,23 @@
 <template>
     <div>
-        <!--{{pizzas}} -->
+       {{pizzas}}
     </div>
     <div class="restarauntBox">
         <div v-for="pizza in pizzas" :key="pizza.id" >
-            <pizza :pizza="pizza"/>
+            <Pizza :pizza="pizza"/>
         </div>
-
-       
     </div>
 
 </template>
 
 <script>
 
-import pizza from './pizza.vue'
+import Pizza from "./Pizza.vue"
 
 export default {
     name: 'restarauntBox',
     components:{
-        pizza
+        Pizza
     },
     props:{
         pizzas: Array
