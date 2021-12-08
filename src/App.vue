@@ -1,10 +1,8 @@
 <template>
   <div class="container">
 
-    <Header restaurantName="Pizza Places in CT" restaurantCity="City"/>
-
+    <Header title="Some of the best Pizza Places in CT"/>
     <RestarauntBox :pizzas="pizzas" />
-    
 
   </div>
 </template>
@@ -19,9 +17,10 @@ export default {
     Header,
     RestarauntBox
   },
+
   data(){
     return {
-        pizzas: {} //[]    
+        pizzas: []  
     }
   },
 
@@ -30,8 +29,10 @@ export default {
 
     async fetchPizzas(){
       //const res= await fetch('https://young-dawn-31355.herokuapp.com/https://pa-final-project.herokuapp.com/api')
-      const res= await fetch('https://pa-final-project.herokuapp.com/api')
+      const res= await fetch('https://pa-final-server.herokuapp.com/api')
       //const res= await fetch('http://localhost:5555/pizza')
+      //const res= await fetch('http://localhost:2323/api')
+
       const data= await res.json()
       console.log(data)
       console.log(typeof(data))
@@ -61,25 +62,16 @@ body {
 
 .container {
   max-width: 500px;
-  margin: 30px auto;
+  margin: 25px auto;
   overflow: auto;
   min-height: 300px;
   border: 0.4em solid blueviolet;
   padding: 20px;
   border-radius: 10px;
+  background-color: cornflowerblue;
 }
 
 div{
   margin-bottom: 0.3em;
 }
-
-/*
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-} */
 </style>

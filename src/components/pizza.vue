@@ -10,7 +10,7 @@
 export default{
     name: 'Pizza',
     props:{
-        pizza: Object //Array
+        pizza: Array
     }
 }
 </script>
@@ -18,9 +18,10 @@ export default{
 <style scoped>
 
 div{
-    background-color: #0baf27;
+    background-color: #3cdff5;
     color: black;
     padding: 1em;
+    border-radius: 10px;
 
 }
 

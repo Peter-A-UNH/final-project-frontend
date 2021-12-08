@@ -1,17 +1,16 @@
 <template>
-    <div>
+   <!-- <div>
        {{pizzas}}
-    </div>
+    </div> -->
     <div class="RestarauntBox">
         <div v-for="pizza in pizzas" :key="pizza.id" >
             <Pizza :pizza="pizza"/>
         </div>
     </div>
-
 </template>
 
-<script>
 
+<script>
 import Pizza from './Pizza.vue'
 
 export default {
@@ -20,25 +19,20 @@ export default {
         Pizza
     },
     props:{
-        pizzas: Object  //Array
+        pizzas: Array
     }
-
 }
 
 </script>
 
 <style scoped>
-
 div{
     text-align: center;
 }
-.restarauntBox{
-
-    background-color: cadetblue;
+.RestarauntBox{
+    background-color: rgb(180, 22, 201);
     padding: 1em;
     color: darkblue;
-
+    border-radius: 10px;
 }
-
-
 </style>
